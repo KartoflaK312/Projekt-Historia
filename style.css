@@ -62,13 +62,11 @@ a {
 }
 
 #tworcy{
-    position:absolute;
-    bottom:0;
-    left:50%;
-    Width:800px;
+    transform:translateY(400px)
+    width:660px;
     height:max-content;
     font-size:1.7rem;
-    padding:20px;
+    padding:3px;
     border-radius:30px;
     background-color:rgb(200, 233, 255);
 }
