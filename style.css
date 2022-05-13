@@ -61,6 +61,15 @@ a {
     text-align: center;
 }
 
+#tworcy{
+    margin-top:130px;
+    Width:500px;
+    height:max-content;
+    font-size:2rem;
+    padding:50px;
+    border-radius:30px;
+    background-color:rgb(200, 233, 255);
+}
 
 /* faza druga */
 
