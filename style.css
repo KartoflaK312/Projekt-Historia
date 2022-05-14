@@ -34,7 +34,7 @@ a {
 
 #button {
     margin-top: 30px;
-    font-size: 3.8rem;
+    font-size: 4rem;
     padding: 2%;
     border-radius: 25%;
     background-color: rgba(156, 247, 250, 0.7);
@@ -42,6 +42,7 @@ a {
     animation: show 2s forwards;
     animation-delay: 3s;
     opacity: 0;
+    display: block;
 }
 
 #okladka {
