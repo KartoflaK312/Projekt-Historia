@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/bg.jpg);
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+    font-family: 'Tapestry', cursive;
+}
+
+
+/* faza pierwsza */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#container {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 100px;
+    font-size: 16px;
+}
+
+#button {
+    margin-top: 30px;
+    font-size: 4rem;
+    padding: 2%;
+    border-radius: 25%;
+    background-color: rgba(156, 247, 250, 0.7);
+    text-decoration: none;
+    animation: show 2s forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    display: block;
+}
+
+#okladka {
+    width: 700px;
+    height: 800px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 1px black;
+    background-image: url('images/zdjecie.jpg');
+    background-size: 170%;
+    animation: show 3s;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-color: rgb(200, 233, 255);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+}
+
+#tworcy{
+    display: table;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 20px;
+    width:660px;
+    height:max-content;
+    font-size:1.8rem;
+    padding:20px;
+    border-radius:30px;
+    background-color:rgb(200, 233, 255);
+}
+
+/* faza druga */
+
+#side1 {
+    width: 350px;
+    height: 800px;
+    background-color: rgb(104, 188, 245);
+    border-radius: 30px 0 0 30px;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    border-right: 3px solid black;
+    animation: animacja2 2s cubic-bezier(.74, 0, .62, .72);
+}
+
+#saszka {
+    margin-top: 70px;
+    width: 260px;
+    height: 200x;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0px;
+    transition: all 1s;
+}
+
+#saszka>a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+#saszka:hover {
+    background-color: blueviolet;
+    font-size: 1.7rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 4px 3px black;
+}
+
+#gej {
+    margin-left: auto;
+    margin-right: auto;
+    width: 0;
+    height: 0;
+    border-left: 130px solid blue;
+    border-right: 130px solid red;
+    border-bottom: 100px solid green;
+    border-top: 100px solid yellow;
+    border-radius: 20px;
+    transition: border-top 0.5s ease;
+    box-shadow: 0px 0px 4px 3px black;
+}
+
+#gej:hover {
+    border-top: 100px solid transparent;
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+#big_paper {
+    margin: auto;
+    margin-top: 50px;
+    width: 250px;
+    height: 275px;
+    background-color: blue;
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px 5px black;
+}
+
+#big_paper>p {
+    text-align: center;
+    transform: rotate(90deg);
+    transform: translateY(110px) rotate(90deg);
+    transition: all 1s;
+    font-size: 1.5rem;
+}
+
+#paper {
+    margin: auto;
+    width: 190px;
+    height: 275px;
+    background-color: blue;
+    opacity: 0;
+    transition: all 1s;
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px 5px black;
+}
+
+#paper>a {
+    text-align: center;
+    display: block;
+    transform: translateY(260px);
+    font-size: 2rem;
+    background-color: rgba(156, 247, 250, 0.7);
+    border-radius: 30px;
+}
+
+#big_paper:hover>p {
+    opacity: 0;
+    transform: translateX(10000px);
+}
+
+#paper:hover {
+    transform: translateY(50px);
+    height: 350px;
+    opacity: 1;
+}
+
+#side2 {
+    width: 700px;
+    height: 800px;
+    background-size: 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-color: rgb(104, 188, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    display: block;
+    padding: 17px;
+    text-shadow: -3px 3px whitesmoke;
+}
+
+#image {
+    border-radius: 20px;
+    border: 3px solid black;
+    display: block;
+}
+
+#side2>p {
+    font-size: 1.5rem;
+}
+
+#side3 {
+    width: 350px;
+    height: 800px;
+    background-color: rgb(104, 188, 245);
+    border-radius: 0 30px 30px 0;
+    animation: animacja 2s cubic-bezier(.74, 0, .62, .72);
+    border-left: 3px solid black;
+    box-shadow: -2px 2px 4px black;
+}
+
+#top_circle {
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 5px 3px black;
+}
+
+#top_circle>a>p {
+    display: block;
+    margin-top: 72px;
+    font-size: 1.7rem;
+    animation: rotation 5s infinite;
+}
+
+#nazwa {
+    font-size: 1.7rem;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#giga {
+    margin-top: 100px;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 220px;
+    background-color: fuchsia;
+    transition: all 2s ease;
+    transform: skew(0deg, 30deg) rotate(45deg);
+}
+
+#gowno {
+    font-size: 2.1rem;
+    display: block;
+    margin-left: 30px;
+    transform: translateY(60px);
+    display: none;
+}
+
+#giga:hover>#gowno {
+    display: block;
+}
+
+#giga:hover {
+    transform: skew(0deg, 0deg) rotate(0deg);
+}
+
+
+/* podstrony */
+
+.content {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content>a {
+    font-size: 3rem;
+    background-color: bisque;
+    padding: 30px;
+    border-radius: 40px;
+    width: max-content;
+}
+
+.content>article {
+    margin-left: 50%;
+    height: max-content;
+    font-size: 2.5rem;
+    width: 50vw;
+    background-color: bisque;
+    padding: 30px;
+    margin-bottom: 300px;
+    border-radius: 40px;
+}
+
+
+/* animacje */
+
+@keyframes animacja {
+    0% {
+        transform: translateX(-350px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animacja2 {
+    0% {
+        transform: translateX(350px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes koperta {
+    0% {}
+    100% {
+        width: 40px;
+        height: 300px;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
